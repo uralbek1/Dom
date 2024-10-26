@@ -19,3 +19,9 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "books.xml", true);
 xhttp.send();
 
+function myFunction(xml) {
+    var xmlDoc = xml.responseXML;
+    var x = xmlDoc.getElementsByTagName("title");
+    document.getElementById("demo").innerHTML =
+    x[2].childNodes[0].nodeValue;
+}
