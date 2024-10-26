@@ -16,7 +16,7 @@ xhttp.onreadystatechange = function() {
         myFunction(this);
     }
 };
-xhttp.open("GET", "books.xml", true);
+xhttp.open("GET", "https://dom1-uralbek.netlify.app/index.xml", true);
 xhttp.send();
 
 function myFunction(xml) {
