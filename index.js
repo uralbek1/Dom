@@ -21,7 +21,7 @@ xhttp.send();
 
 function myFunction(xml) {
     var xmlDoc = xml.responseXML;
-    var x = xmlDoc.getElementsByTagName("logotip");
+    var logotip = xmlDoc.getElementsByTagName("logotip");
     document.getElementById("logotip").innerHTML =
     logotip[0].childNodes[0].nodeValue;
 }
