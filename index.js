@@ -23,5 +23,5 @@ function myFunction(xml) {
     var xmlDoc = xml.responseXML;
     var x = xmlDoc.getElementsByTagName("logotip");
     document.getElementById("logotip").innerHTML =
-    x[2].childNodes[0].nodeValue;
+    logotip[0].childNodes[0].nodeValue;
 }
