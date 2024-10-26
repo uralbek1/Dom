@@ -20,8 +20,8 @@ xhttp.open("GET", "https://dom1-uralbek.netlify.app/index.xml", true);
 xhttp.send();
 
 function myFunction(xml) {
-    var x - xmlDoc = xml.responseXML;
-    var = xmlDoc.getElementsByTagName("logotip");
+    var xmlDoc = xml.responseXML;
+    var x = xmlDoc.getElementsByTagName("logotip");
     document.getElementById("logotip").innerHTML =
     x[2].childNodes[0].nodeValue;
 }
